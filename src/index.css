@@ -102,3 +102,14 @@ h3{
   border-radius: 5px;
   cursor: pointer;
 }
+
+
+/*********** Disussions****** */
+
+
+.discus{
+  width: 95%;
+  height: 120px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

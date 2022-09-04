@@ -21,6 +21,14 @@ code {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+
+.lectures{
+  width: 95%;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+
 .all_lect{
   height: 120px;
   padding: 20px;
@@ -62,4 +70,35 @@ h3{
 }
 
 
-/* ************************ */
+/* ************** Assignments********** */
+
+
+.Ass_main{
+  margin:auto;
+  width: 90%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.Assi{
+  width: 95%;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+#btn1{
+  background-color: rgb(34,197,94);
+   width: 85px;
+   min-height: 30px;
+   border: transparent;
+   cursor: pointer; 
+}
+
+.fullstack{
+  background-color: rgb(45, 131, 211);
+  min-width: 40px;
+  color: white;
+  border: transparent;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -8,6 +8,8 @@ import Lectures from "../Components/Lectures";
 import Navbar from "../Components/Navbar";
 import Notification from "../Components/Notification";
 import ElectivesCatalog from "../Components/ElectivesCatallog";
+import Tickets from "../Components/Tickets";
+import CreateTickets from "../Components/CreateTickets";
 
 const AllRoutes = () => {
   return (
@@ -21,6 +23,8 @@ const AllRoutes = () => {
         <Route path="/notifications" element={<Notification />} />
         <Route path="/electives" element={<Electives />} />
         <Route path="/electives/catalog" element={<ElectivesCatalog />} />
+        <Route path="/tickets" element={<Tickets />} />
+        <Route path="/tickets/create" element={<CreateTickets />} />
       </Routes>
     </>
   );

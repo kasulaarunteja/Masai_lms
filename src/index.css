@@ -142,11 +142,19 @@ h3{
 }
 
 .Electives{
-  
   width: 95%;
   margin-left: 30px;
   height: 50px;
   margin-bottom: 50px;
+}
+
+.Electives{
+  width: 95%;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px;
+  margin: auto;
+  height: 80px;
 }
 
 
@@ -187,6 +195,7 @@ h3{
   cursor: pointer;
 }
 
+
 .ElectivesCatalogsss{
   width: 95%;  
   margin: auto;
@@ -194,4 +203,97 @@ h3{
   text-align: start;
   padding: 14px;
   border-radius: 5px;
+}
+
+
+/* Tickets */
+.Tickets{
+  width: 95%;
+  margin-left: 30px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+.Tickets{
+  width: 95%;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px;
+  margin: auto;
+  height: 80px;
+  margin-bottom: 50px;
+}
+
+
+
+/* create Ticket */
+
+.createtickts{
+  width: 95%;
+  margin :auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.creatediv{
+  text-align: left;
+  padding-left: 40px;
+  margin-top: 50px;
+  padding-top: 50px;
+  width: 98%;
+  margin: auto;
+}
+
+.select1{
+  width: 26%;
+  height: 38px;
+  border: 0.5px solid;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.cteateinpt{
+  width:96%;
+  font-size: 16px;
+  min-height: 35px;
+  border: 0.5px solid;
+  border-radius:5px;
+}
+textarea{
+  border: transparent;
+  font-size: 18px;
+}
+textarea:focus, textarea:active,textarea:visited{
+  border: transparent;
+}
+
+.createaa{
+  display: flex;
+  gap: 20px;
+  width: 96%;
+  padding-left: 10px;  
+  height: 60px;
+  cursor: pointer;
+  font-size: 16px; 
+  background-color: #f8f7f7;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.createaa1:hover{  
+  color: rgb(0, 225, 255);
+  text-decoration: underline;
+}
+.createaa2:hover{  
+  color: rgb(0, 225, 255);
+  text-decoration: underline;
+}
+.createaa3:hover{  
+  color: rgb(0, 225, 255);
+  text-decoration: underline;
+}
+
+
+.btnsasa{
+  text-align: start;
+  margin-left: 30px;
 }

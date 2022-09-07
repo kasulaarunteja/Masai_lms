@@ -13,6 +13,26 @@ code {
 }
 
 
+.links{    
+  color: black;
+  text-underline-offset: 35px;
+  text-decoration: none;
+  cursor: pointer;
+}
+ .links:focus{
+  color: rgb(0, 0, 255);
+  text-underline-offset: 32px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.links:hover{
+  /* color: black; */
+  text-underline-offset: 32px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
 /****************** Lectures css *******************/
 
 .lect_main{
@@ -112,4 +132,66 @@ h3{
   height: 120px;
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/* Electives */
+.divcc{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+ 
+}
+
+.Electives{
+  
+  width: 95%;
+  margin-left: 30px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+
+.btns{
+  background-color: rgb(32, 32, 32);
+  color: white;
+  min-width: 80px;
+  margin-top: 13px;
+  border-radius: 5px;
+  padding: 5px;
+  min-height: 30px;
+  margin-left: 3px;  
+  cursor: pointer;
+}
+
+.btns:hover{
+  background-color: rgb(66, 66, 66);
+  color: white;
+  min-width: 80px;
+  margin-top: 13px;
+  border-radius: 5px;
+  padding: 5px;
+  min-height: 30px;
+  margin-left: 3px;  
+  cursor: pointer;
+}
+
+
+/* catalogs */
+
+
+.Catalogss{
+  display: flex;
+  gap: 0%;
+  width: 95%;
+  margin: auto;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.ElectivesCatalogsss{
+  width: 95%;  
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: start;
+  padding: 14px;
+  border-radius: 5px;
 }

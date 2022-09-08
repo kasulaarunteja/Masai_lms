@@ -10,6 +10,7 @@ import Notification from "../Components/Notification";
 import ElectivesCatalog from "../Components/ElectivesCatallog";
 import Tickets from "../Components/Tickets";
 import CreateTickets from "../Components/CreateTickets";
+import ToSchedule from "../Components/ToSchedule";
 
 const AllRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const AllRoutes = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<ToSchedule/>}/>
         <Route path="/lectures" element={<Lectures />} />
         <Route path="/Assignments" element={<Assignment />} />
         <Route path="/discussions" element={<Discussions />} />

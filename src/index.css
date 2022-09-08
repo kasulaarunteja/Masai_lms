@@ -141,6 +141,12 @@ h3{
  
 }
 
+.btnss{
+  display: flex;
+  gap: 5px;
+}
+
+
 .Electives{
   width: 95%;
   margin-left: 30px;
@@ -296,4 +302,72 @@ textarea:focus, textarea:active,textarea:visited{
 .btnsasa{
   text-align: start;
   margin-left: 30px;
+}
+
+/* Today schedule */
+
+.Schedule{
+  width: 95%;
+  height: 80px;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px;
+  margin: auto;
+}
+
+.Toschules{
+  width: 95%;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.all_lects{
+  height: 135px;
+  padding: 20px;
+  display: flex;
+  gap:10px;
+  cursor: pointer;
+}
+
+.all-lects:hover{ 
+  height: 125px;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;  
+  background-color: rgb(255, 255, 255);
+}
+
+.lects{
+  width: 180px;
+  height: 100%;
+  padding-top: 1px;
+  background-color: rgb(78, 78, 248);
+  color: aliceblue;
+  text-align: center;
+}
+.btnsdiv{
+ gap:5px;
+}
+
+.dbtns{
+  background-color: rgb(147, 188, 255);
+  border-radius: 30px;
+  color: black;
+  border: transparent;
+  min-height: 20px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.dbtnss{
+  background-color: rgb(150, 244, 171);
+  border-radius: 30px;
+  width: 50px;
+  color: black;
+  border: transparent;
+  min-height: 20px;
+  cursor: pointer;
 }

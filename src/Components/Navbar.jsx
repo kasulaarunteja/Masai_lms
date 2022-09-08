@@ -5,7 +5,7 @@ import "../App.css";
 const Navbar = () => {
   return (
     <div className="Navbar">
-      <Link className="links" to={"/Home"}>
+      <Link className="links" to={"/dashboard"}>
         <img className="img" src="img/masai.png" alt="" />
       </Link>
       <Link className="links" to={"/lectures"}>

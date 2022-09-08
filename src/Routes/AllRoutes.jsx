@@ -12,6 +12,7 @@ import Tickets from "../Components/Tickets";
 import CreateTickets from "../Components/CreateTickets";
 import ToSchedule from "../Components/ToSchedule";
 import BookMarks from "../Components/BookMarks";
+import Admin from "../Components/Admin";
 
 const AllRoutes = () => {
   return (
@@ -29,6 +30,7 @@ const AllRoutes = () => {
         <Route path="/tickets" element={<Tickets />} />
         <Route path="/tickets/create" element={<CreateTickets />} />
         <Route path="/Bookmarks" element={<BookMarks/>} />
+        <Route path="/admin" element={<Admin/>} />
       </Routes>
     </>
   );

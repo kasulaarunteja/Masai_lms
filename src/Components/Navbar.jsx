@@ -1,4 +1,5 @@
 import React from "react";
+import Popup from "reactjs-popup";
 import { Link } from "react-router-dom";
 import "../App.css";
 
@@ -30,6 +31,28 @@ const Navbar = () => {
         <p className="title">Electives</p>
       </Link>
       <div></div>
+      <div className="ppa">
+        <div>
+          <Popup
+            className="pppaa"
+            trigger={<p className="prf">{"Arun Teja"}</p>}
+            modal
+            nested
+          >
+            <div className="profile">
+              <div className="pcontent">
+                <p className="paaa"> Manage Account </p>
+                <Link className="plinks" to={"/user/profile"}>
+                  <p className="paaaa">Profile</p>
+                </Link>
+                <p  className="paaaa">
+                  Log Out
+                </p>
+              </div>
+            </div>
+          </Popup>
+        </div>
+      </div>
     </div>
   );
 };

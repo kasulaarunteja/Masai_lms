@@ -371,3 +371,40 @@ textarea:focus, textarea:active,textarea:visited{
   min-height: 20px;
   cursor: pointer;
 }
+
+
+/* Bookmarks */
+
+
+.BookMarks{
+  width:95%;
+  height: 50px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+.bookmarks{
+  width: 95%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.h33333{
+  text-align: start;
+  margin-left: 33px;
+}
+
+/* .h22{  
+  text-align: start;
+} */
+
+.blect{
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+p{
+  text-align: center;
+}

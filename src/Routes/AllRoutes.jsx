@@ -11,6 +11,7 @@ import ElectivesCatalog from "../Components/ElectivesCatallog";
 import Tickets from "../Components/Tickets";
 import CreateTickets from "../Components/CreateTickets";
 import ToSchedule from "../Components/ToSchedule";
+import BookMarks from "../Components/BookMarks";
 
 const AllRoutes = () => {
   return (
@@ -27,6 +28,7 @@ const AllRoutes = () => {
         <Route path="/electives/catalog" element={<ElectivesCatalog />} />
         <Route path="/tickets" element={<Tickets />} />
         <Route path="/tickets/create" element={<CreateTickets />} />
+        <Route path="/Bookmarks" element={<BookMarks/>} />
       </Routes>
     </>
   );

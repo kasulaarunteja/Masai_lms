@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
-
+import axios from "axios";
 
 const Assignment = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios.get("https://masailms-clone.herokuapp.com/assignment").then((res) => {
+      setData(res.data);
+      console.log(res.data);
+    });
+  }, []);
+
   return (
-    <div>
-      <Navbar/>
+    <>
+      <Navbar />
       <hr />
       <div className="divcc">
         <div className="Tickets">
@@ -13,17 +22,19 @@ const Assignment = () => {
         </div>
       </div>
 
-      <div className="Ass_main">
+      {data.map((ele) => {
+        return (
+          <div className="Ass_main">
         <div className="Assi">
           <div className="all_lect">
             <div className="detls">
               <h3>
-                Thrive - Week 4{" "}
-                <button className="fullstack">FULL_STACK</button>
+                {ele.title}
+                <button className="fullstack">{ele.category}</button>
               </h3>
               <p>
-                <strong>Arun Teja</strong> Created
-                <strong>Assignments Problems</strong> at 10 Aug, 22 - 9:00 Am
+                <strong>{ele.Instrutor}</strong> Created
+                <strong>{ele.Type}</strong> at {ele.Scheduled}
               </p>
             </div>
             <div className="details">
@@ -33,49 +44,11 @@ const Assignment = () => {
               </div>
             </div>
           </div>
-
-          <hr />
-
-          <div className="all_lect">
-            <div className="detls">
-              <h3>
-                Thrive - Week <button className="fullstack">Frontend</button>
-              </h3>
-              <p>
-                <strong>Arun Teja</strong> Created
-                <strong>Assignments Problems</strong> at 10 Aug, 22 - 9:00 Am
-              </p>
-            </div>
-            <div className="details">
-              <button id="btn1">Completed</button>
-              <div>
-                <p>0/1</p>
-              </div>
-            </div>
           </div>
-
-          <hr />
-
-          <div className="all_lect">
-            <div className="detls">
-              <h3>
-                Thrive - Week 2 <button className="fullstack">Backend</button>
-              </h3>
-              <p>
-                <strong>Arun Teja</strong> Created
-                <strong>Assignments Problems</strong> at 10 Aug, 22 - 9:00 Am
-              </p>
-            </div>
-            <div className="details">
-              <button id="btn1">Completed</button>
-              <div>
-                <p>0/1</p>
-              </div>
-            </div>
           </div>
-        </div>
-      </div>
-    </div>
+        )
+      })}
+    </>
   );
 };
 

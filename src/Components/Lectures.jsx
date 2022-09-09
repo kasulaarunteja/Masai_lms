@@ -1,9 +1,12 @@
 import React from "react";
+import Navbar from "../Components/Navbar";
+
 
 const Lectures = () => {
   return (
     <div>
-      <hr />
+           <Navbar/>  
+       <hr />
       <div className="divcc">
         <div className="Tickets">
           <h2 className="h22">Lectures</h2>

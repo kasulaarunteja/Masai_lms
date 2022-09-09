@@ -13,13 +13,14 @@ import CreateTickets from "../Components/CreateTickets";
 import ToSchedule from "../Components/ToSchedule";
 import BookMarks from "../Components/BookMarks";
 import Admin from "../Components/Admin";
+import Singup from "../Components/Singup";
 
 const AllRoutes = () => {
   return (
     <>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/singup" element={<Singup/>}/>
         <Route path="/dashboard" element={<ToSchedule/>}/>
         <Route path="/lectures" element={<Lectures />} />
         <Route path="/Assignments" element={<Assignment />} />

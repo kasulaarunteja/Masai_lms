@@ -1,9 +1,13 @@
 import React from "react";
-import Popup from "reactjs-popup";
+import Navbar from "../Components/Navbar";
+
 
 const Admin = () => {
+
+
   return (
     <>
+    <Navbar/>
       <hr />
       <div className="divcc">
         <div className="Tickets">

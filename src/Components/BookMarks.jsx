@@ -1,8 +1,10 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 const BookMarks = () => {
   return (
     <>
+    <Navbar/>
       <hr />
       <div className="divcc">
         <div className="BookMarks">

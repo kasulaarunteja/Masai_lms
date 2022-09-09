@@ -1,8 +1,10 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 const Discussions = () => {
   return (
     <div>
+      <Navbar/>
       <hr />
       <div className="divcc">
         <div className="Tickets">

@@ -32,3 +32,99 @@ img{
  
 }
 
+/* singup page  */
+
+
+.img1{
+  width: 240px;
+  height: 100px;
+}
+
+.inputs{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 35%;
+  min-height: 200px;
+  margin: auto;  
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.label1{
+  display: block; 
+  margin-left:10px;
+  font-size: 15px;
+  font-weight: 500;  
+  text-align: start;
+}
+
+.input{
+  width: 95%;
+  margin: auto;
+  height: 35px;
+  border: 0.5px solid;
+  border-radius: 5px;
+}
+
+.passwordref{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 23px;
+}
+
+
+.signup{
+  background-color: gainsboro;
+  color: gray;
+  min-width: 90%;
+  margin-top: 13px;
+  border-radius: 5px;
+  padding: 5px;
+  min-height: 40px;
+  margin-left: 3px;  
+  border: transparent;
+  cursor: pointer;
+}
+
+.signup:hover{
+background-color: rgb(66, 133, 244);
+color: white;
+min-width: 90%;
+margin-top: 13px;
+border-radius: 5px;
+padding: 5px;
+min-height: 40px;
+margin-left: 3px;  
+border: transparent;
+cursor: pointer;
+}
+
+
+.login111{
+  color: blue;
+  text-align: center;
+  text-decoration: none;
+}
+
+.df1111{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  gap: 5px;
+}
+
+.aaa{
+  text-decoration: none;
+  color: #9f9f9f;
+}
+.aalink{
+  text-decoration: none;
+}
+.aaaa{ 
+  color: #9f9f9f;
+}
+
+
+from>h22{
+  font-size: 00.5px;
+}

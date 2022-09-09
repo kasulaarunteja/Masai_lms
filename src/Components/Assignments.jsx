@@ -1,8 +1,11 @@
 import React from "react";
+import Navbar from "../Components/Navbar";
+
 
 const Assignment = () => {
   return (
     <div>
+      <Navbar/>
       <hr />
       <div className="divcc">
         <div className="Tickets">

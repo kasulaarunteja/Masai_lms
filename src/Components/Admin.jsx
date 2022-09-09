@@ -1,10 +1,31 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
+import { useState } from "react";
+import axios from "axios";
 
 
 const Admin = () => {
 
 
+  const [data, setdata] = useState({
+    title:"",
+    category:"",
+    type:"",
+    Instructor:"",
+    date:"",
+    optional:"",
+    time:""
+  })
+
+
+  const handleChange = () => {
+    axios.post('https://masailms-clone.herokuapp.com/lectures', data).then(({res}) => {
+    setdata(res.data)
+    console.log(res.data)
+  })
+  }
+
+  
   return (
     <>
     <Navbar/>
@@ -17,12 +38,12 @@ const Admin = () => {
 
       {/* add assigments */}
       <h2 className="ti">Add Assignments</h2>
-      <div class="main-admin-div">
-        <div class="title-div">
+      <div className="main-admin-div">
+        <div className="title-div">
           <p>Title</p>
           <input type="text" id="title" />
         </div>
-        <div class="mid-div">
+        <div className="mid-div">
           <div>
             <p>Category</p>
             <select name="" id="category">
@@ -56,7 +77,7 @@ const Admin = () => {
             </select>
           </div>
         </div>
-        <div class="mid-div">
+        <div className="mid-div">
           <div>
             <p>Scheduled</p>
             <input type="date" id="date" />
@@ -74,7 +95,7 @@ const Admin = () => {
             <input type="time" id="time" />
           </div>
         </div>
-        <button>Add</button>
+        <button onClick = {handleChange()}>Add</button>
       </div>
         
         <br />
@@ -82,12 +103,12 @@ const Admin = () => {
       {/* add lectures to */}
 
       <h2 className="ti">Add Lectures</h2>
-      <div class="main-admin-div">
-        <div class="title-div">
+      <div className="main-admin-div">
+        <div className="title-div">
           <p>Title</p>
           <input type="text" id="title" />
         </div>
-        <div class="mid-div">
+        <div className="mid-div">
           <div>
             <p>Category</p>
             <select name="" id="category">
@@ -120,7 +141,7 @@ const Admin = () => {
             </select>
           </div>
         </div>
-        <div class="mid-div">
+        <div className="mid-div">
           <div>
             <p>Scheduled</p>
             <input type="date" id="date" />

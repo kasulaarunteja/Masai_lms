@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
+import axios from "axios";
 
 
-const Lectures = () => {
+const Lectures = () => { 
+
+  const [lect, setLect] = useState([]);
+
+  useEffect(() => {
+    axios.get("https://masailms-clone.herokuapp.com/lectures").then((res) => {
+       setLect(res.data);
+       console.log(res.data)
+    })
+  },[])
+
+
   return (
     <div>
            <Navbar/>  
@@ -12,55 +24,30 @@ const Lectures = () => {
           <h2 className="h22">Lectures</h2>
         </div>
       </div>
-
-      <div className="lect_main">
-        <div className="lectures">
+      {lect.map((ele) => {
+        return (
+          <div className="Ass_main">
+        <div className="Assi">
           <div className="all_lect">
             <div className="detls">
-              <h3>Scrum 09.08.2022 </h3>
+              <h3>
+                {ele.title}
+                <button className="fullstack">{ele.category}</button>
+              </h3>
               <p>
-                {" "}
-                <strong>Arun Teja</strong> Scheduled
-                <strong>Scrum</strong> at 10 Aug, 22 - 9:00 Am
-                <span className="live">live</span>
+                <strong>{ele.Instrutor}</strong> Created
+                <strong>{ele.Type}</strong> at {ele.Scheduled}
               </p>
             </div>
             <div className="details">
-              <button id="btn">Present</button>
+              <button id="btn1">New</button>
             </div>
           </div>
-          <hr />
-          <div className="all_lect">
-            <div className="detls">
-              <h3>DSA 10.08.2022 </h3>
-              <p>
-                {" "}
-                <strong>Arun Teja</strong> Scheduled
-                <strong>DSA</strong> at 10 Aug, 22 - 9:30 Am
-                <span className="live">live</span>
-              </p>
-            </div>
-            <div className="details">
-              <button id="btn">Present</button>
-            </div>
           </div>
-          <hr />
-          <div className="all_lect">
-            <div className="detls">
-              <h3>Scrum 11.08.2022 </h3>
-              <p>
-                {" "}
-                <strong>Arun Teja</strong> Scheduled
-                <strong>Scrum</strong> at 11 Aug, 22 - 10:00 Am
-                <span className="live">live</span>
-              </p>
-            </div>
-            <div className="details">
-              <button id="btn">Present</button>
-            </div>
           </div>
-        </div>
-      </div>
+        )
+      })}
+    
     </div>
   );
 };

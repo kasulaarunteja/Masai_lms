@@ -39,9 +39,6 @@ const Assignment = () => {
             </div>
             <div className="details">
               <button id="btn1">New</button>
-              <div>
-                <p>0/1</p>
-              </div>
             </div>
           </div>
           </div>

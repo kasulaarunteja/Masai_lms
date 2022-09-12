@@ -35,7 +35,7 @@ const Navbar = () => {
         <div>
           <Popup
             className="pppaa"
-            trigger={<p className="prf">{"Arun Teja"}</p>}
+            trigger={<p className="prf">{"user.name || user.email"}</p>}
             modal
             nested
           >

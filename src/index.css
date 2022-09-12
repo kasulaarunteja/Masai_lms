@@ -556,3 +556,77 @@ input{
   font-family: calibri;
   text-decoration: underline;
 }
+
+
+/* login page css home page */
+
+.form_container1{
+  width: 30%;
+  height: 400px;
+  margin: 5% auto auto;
+  padding-top: 1%;
+  font-family: calibri;
+  border-radius: 2%;
+  border: 1px solid ;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.img_div{
+  width: 150px;
+  height: 50px;
+  margin: 1% auto -3%;
+}
+
+.form_container1>h2{
+ font-size: 25px;
+ margin-left: 30px;
+ margin-bottom: 0%;
+ font-family: calibri;
+ text-decoration: unset;
+
+}
+
+.form_container1>form{
+  width: 50%;
+  margin-top: -2%;
+}
+
+.form1{
+  width: 30%;
+  height: 77%;
+  text-align: center;
+  padding: 20px 20px 20px 30px;
+  border-radius: 10px;
+}
+
+.form1>#lab{
+  width: 400px;
+    font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    color: #000;
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+    margin-bottom: -10%;
+    margin-top: 0%;
+}
+
+
+.form1>h4 {
+  margin-top: -.5%;
+  margin-bottom: 3%;
+}
+
+a{
+ color: #374151;
+}
+
+
+.subbtn {
+ background-color:#00f;
+ color: #fff;
+ font-weight: 700;
+ margin-left: -75%;
+ width: 70px;
+ height: 30px;
+ border-radius: 5px;
+}

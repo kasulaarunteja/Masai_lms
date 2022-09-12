@@ -21,7 +21,7 @@ const Singup = () => {
   const [reg, setReg] = useState(false);
 
   if (reg) {
-    navigate("/home");
+    navigate("/");
   }
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,13 +39,14 @@ const Singup = () => {
   };
 
   return (
+    
     <div className="HomePage">
-      <div>
-        {/* <img className="img1" src="img/masai.png" alt="" /> */}
-      </div>
+      <div className="img_div">
+            <img className="img" src="img/masai.png" alt="" />
+        </div>
       <div className="inputs">
         <form onSubmit={handleSubmit}>
-          <h2>Sign Up</h2>
+          <h2>Sing Up</h2>
           <label className="label1">Full Name</label> <br />
           <input type="text" className="input" placeholder='Enter Name'
                 id="name" onChange={handleChange}

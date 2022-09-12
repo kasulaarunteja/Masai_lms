@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -27,9 +28,9 @@ const Home = () => {
     e.preventDefault();
     setLogin(false);
     axios
-      .post("http://localhost:8080/login", user)
+      .post("https://masailms-clone.herokuapp.com/login", user)
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         setUser(res.data.user);
         localStorage.setItem("user", JSON.stringify(res.data.user));
         setLogin(true);
@@ -42,44 +43,50 @@ const Home = () => {
 
   return (
     <div>
-      <div className="modal-dialog">
-        <div className="modal-content">
-          <form onSubmit={handleClick}>
-            <div className="mb-3">
-              <label htmlFor="exampleInputEmail1" className="form-label">
-                Email address
-              </label>
-              <input
-                type="email"
-                className="form-control"
-                id="email"
-                aria-describedby="emailHelp"
-                value={user.email}
-                onChange={handleChange}
-              />
-              <div id="emailHelp" className="form-text">
-                We'll never share your email with anyone else.
-              </div>
+      <div className="Login">
+        <div className="form_container1">
+          <div className="img_div">
+            <img className="img" src="img/masai.png" alt="" />
+          </div>
+          <h2>Login</h2>
+          <form onSubmit={handleClick} className="form1">
+            <label className="label" id="lab">
+              Email
+            </label>
+            <br />
+            <input
+              type="email"
+              className="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+              value={user.email}
+              onChange={handleChange}
+            />
+            <div id="emailHelp" className="form-text">
+              We'll never share your email with anyone else.
             </div>
-            <div className="mb-3">
-              <label htmlFor="exampleInputPassword1" className="form-label">
-                Password
-              </label>
-              <input
-                type="password"
-                className="form-control"
-                id="password"
-                value={user.password}
-                onChange={handleChange}
-              />
-            </div>
+            <br />
+            <label className="label" id="lab">
+              Password
+            </label>
+            <br />
+            <input
+              type="password"
+              className="form-control"
+              id="password"
+              value={user.password}
+              onChange={handleChange}
+            />
+            <h4>Don't Have an account?
+              <a href="/singup">Sing Up</a>
+              </h4>
 
-            <button
-              className="w-100 btn btn-primary btn-lg "
+              <button
+              className="subbtn"
               type="submit"
               onClick={handleClick}
             >
-              Continue
+              Login
             </button>
           </form>
         </div>

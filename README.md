@@ -11,21 +11,37 @@ Assignment - Create LMS
 You are using Masai LMS quite extensively. Let’s see if you can build important features of Masai LMS. 
 Components -
 
+<<<<<<< HEAD
 Project Submission & UI : 
+=======
+DAY 1 - Project Submission & UI : 
+>>>>>>> 392dc9315940030a7a07f28aa87b3ab9cfbd2f41
 
 Setup the project, Deploy on heroku and Submit git & heroku links in tracker sheet.
 
 Both for UI & features, you need to Work on following routes of Masai LMS:
 
+<<<<<<< HEAD
 1. https://masai-lms-iota.vercel.app/ ( Setup authentication using firebase )
 2. lms/lectures
 3. lms/assignments
 4. lms/admin ( explained in Day 2 below )
+=======
+1. https://course.masaischool.com/login ( Setup authentication using firebase )
+2.https://course.masaischool.com/lectures
+3. https://course.masaischool.com/assignments
+4. https://course.masaischool.com/admin ( explained in Day 2 below )
+>>>>>>> 392dc9315940030a7a07f28aa87b3ab9cfbd2f41
 
 
 
 
+<<<<<<< HEAD
 Setup Backend & Authentication : 
+=======
+
+DAY 2 - Setup Backend & Authentication : 
+>>>>>>> 392dc9315940030a7a07f28aa87b3ab9cfbd2f41
 
 Connect a Mongodb database with a Node.js server to perform CRUD operations.
 
@@ -37,8 +53,12 @@ Create following api’s :
 Add relevant details for each lecture and assignment. You can refer to Masai LMS to see what kind of data each lecture and assignment has. 
 
 
+<<<<<<< HEAD
 
 Create Admin Page.
+=======
+DAY 3 - Create Admin Page.
+>>>>>>> 392dc9315940030a7a07f28aa87b3ab9cfbd2f41
 
 
 
@@ -48,13 +68,21 @@ Post a new assignment
 
 Both lecture & assignment should be added to MongoDB database via API routes mentioned in Day 1. 
 
+<<<<<<< HEAD
 Admin will use https://masai-lms-iota.vercel.app/ to login just like other users.
+=======
+Admin will use https://course.masaischool.com/login  to login just like other users.
+>>>>>>> 392dc9315940030a7a07f28aa87b3ab9cfbd2f41
 Check the ip address of admin as well, allow successful signin only if ip address is from india.
 
 
 
 
+<<<<<<< HEAD
 Final Touch Up & Bug Fixes.
+=======
+DAY 4 - Final Touch Up & Bug Fixes.
+>>>>>>> 392dc9315940030a7a07f28aa87b3ab9cfbd2f41
 
 
 
@@ -72,3 +100,7 @@ Submission -
 Submit Github link and Netilfy deployed link on day 1 itself in Tracker sheet.
 Google drive link of a 1 min video explaining progress of your project daily.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 392dc9315940030a7a07f28aa87b3ab9cfbd2f41

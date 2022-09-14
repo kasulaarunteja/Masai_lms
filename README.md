@@ -17,10 +17,10 @@ Setup the project, Deploy on heroku and Submit git & heroku links in tracker she
 
 Both for UI & features, you need to Work on following routes of Masai LMS:
 
-1. https://course.masaischool.com/login ( Setup authentication using firebase )
-2. https://course.masaischool.com/lectures
-3. https://course.masaischool.com/assignments
-4. https://course.masaischool.com/admin ( explained in Day 2 below )
+1. https://masai-lms-iota.vercel.app/ ( Setup authentication using firebase )
+2. lms/lectures
+3. lms/assignments
+4. lms/admin ( explained in Day 2 below )
 
 
 
@@ -48,7 +48,7 @@ Post a new assignment
 
 Both lecture & assignment should be added to MongoDB database via API routes mentioned in Day 1. 
 
-Admin will use https://course.masaischool.com/login  to login just like other users.
+Admin will use https://masai-lms-iota.vercel.app/ to login just like other users.
 Check the ip address of admin as well, allow successful signin only if ip address is from india.
 
 

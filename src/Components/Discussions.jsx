@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 const Discussions = () => {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <hr />
       <div className="divcc">
         <div className="Tickets">

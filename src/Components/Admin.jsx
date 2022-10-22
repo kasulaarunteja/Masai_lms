@@ -9,14 +9,11 @@ const Admin = () => {
   const [lectdata, setLectdata] = useState({});
   const [ldata, setLdata] = useState({});
 
-
-
   const handleChange1 = (ele) => {
     //console.log(ele.target)
-    const {id, value} = ele.target;
+    const { id, value } = ele.target;
     setLectdata({ ...lectdata, [id]: value });
   };
-  
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -24,7 +21,7 @@ const Admin = () => {
   };
 
   const postData = (e) => {
-      e.preventDefault();
+    e.preventDefault();
     let axiosConfig = {
       headers: {
         "Content-Type": "application/json;charset=UTF-8",
@@ -44,37 +41,35 @@ const Admin = () => {
         console.log("AXIOS ERROR: ", err);
       });
 
-    if(data){
-     alert("Assignment is Added")
+    if (data) {
+      alert("Assignment is Added");
     }
   };
 
   const postData1 = (e) => {
-       e.preventDefault();
-       let axiosConfig = {
-        headers: {
-          "Content-Type": "application/json;charset=UTF-8",
-          "Access-Control-Allow-Origin": "*",
-        },
-      };
-      axios
-        .post(
-          "https://masailms-clone.herokuapp.com/lectures",
-          lectdata,
-          axiosConfig
-        )
-        .then((res) => {
-          console.log("RESPONSE RECEIVED: ", res);
-        })
-        .catch((err) => {
-          console.log("AXIOS ERROR: ", err);
-        });
-      // if(ldata){
-      //  alert("Lectures is Added")
-      // }
-  }
-
-  
+    e.preventDefault();
+    let axiosConfig = {
+      headers: {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Access-Control-Allow-Origin": "*",
+      },
+    };
+    axios
+      .post(
+        "https://masailms-clone.herokuapp.com/lectures",
+        lectdata,
+        axiosConfig
+      )
+      .then((res) => {
+        console.log("RESPONSE RECEIVED: ", res);
+      })
+      .catch((err) => {
+        console.log("AXIOS ERROR: ", err);
+      });
+    // if(ldata){
+    //  alert("Lectures is Added")
+    // }
+  };
 
   return (
     <>

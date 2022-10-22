@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 const BookMarks = () => {
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <hr />
       <div className="divcc">
         <div className="BookMarks">
